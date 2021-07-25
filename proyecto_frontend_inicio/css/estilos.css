@@ -10,3 +10,42 @@
     background-color: rgba(26, 26, 26, 0);
     color: #010102;
 }
+
+
+.row {
+    justify-content: center;
+}
+
+.col-lg-4 {
+    padding: 5px 5px 5px 5px;
+ 
+}
+.col {
+
+    border-radius: 5%;
+}
+.cancion{
+    background-color: snow;
+}
+.container{
+    justify-items: center;
+}
+.col > div{
+    padding: 7px 0px 7px 0px;;
+}
+#topCancion{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(7, 189, 46);
+}
+#img2{
+    -webkit-filter: saturate(20%);
+    -webkit-filter: invert(180%);
+    transform: rotate(180deg);
+}
+#img3{
+    -webkit-filter: saturate(10%);
+    -webkit-filter: invert(90%);
+    transform: rotate(180deg);
+}

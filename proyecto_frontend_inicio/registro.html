@@ -19,7 +19,7 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
       <div class="container">
         <a class="navbar-brand text-primary font-weight-bold align-middle" style="font-size: 2.5rem;" href="index.html">
           <img src="imagenes/logo.png" alt="" class="rounded float-left">
@@ -76,17 +76,28 @@
               </div>
 
             </li>
-            <li class="nav-item ">
-              <a class="nav-link bg-blue" href="login.html">Login</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="registro.html">Registro</a>
-            </li>
+            <div class="col-md-none">
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Inicio de Sesion</a>
+              </li>
+            </div>
+            <div class="col-md-none">
+              <li class="nav-item">
+                <a class="nav-link" href="registro.html">Registro</a>
+              </li>
+
+            </div>
           </ul>
         </div>
       </div>
     </nav>
     <main>
+      <div class="container" id="alertas">
+        
+
+        </div>
+
+      </div>
       <div class="py-5 text-left bg-light">
         <div class="col-md-6 m-auto">
             <form class="form-group" name="formRegistrar">
@@ -158,11 +169,58 @@
                 />
               </div>
               <div class="form-group">
-                <label for="inputCountry" class="sr-only">País</label>
-                <select id="inputCountry" class="form-control" name="pais">
-                  <option selected>Colombia</option>
-                  <option>Peru</option>
+                <label for="inputGener" class="sr-only">Género musical favorito</label>
+                <select id="inputGener" class="form-control" name="genero" required>
+                  <option>Clasica</option>
+                  <option>Jazz</option>
+                  <option>Pop</option>
+                  <option>Rap</option>
+                  <option>Regueaton</option>
+                  <option>Rock</option>
+                  <option>Salsa</option>
                 </select>
+              </div>
+              <div class="form-group">
+                <label for="age" class="form-check-label">Edad</label>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="gridRadios"
+                    id="menor20"
+                    value="menor20reo"
+                    checked
+                  />
+                  <label class="form-check-label" for="menor20">
+                    Menor a 20
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="gridRadios"
+                    id="veinteacuarenta"
+                    value="veinteacuarenta"
+                  />
+                  <label class="form-check-label" for="veinteacuarenta">
+                    20 a 40
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="gridRadios"
+                    id="mayor50"
+                    value="mayor50"
+                    
+                  />
+                  <label class="form-check-label" for="mayor50">
+                    Mayor a 50
+                  </label>
+                </div>
+
               </div>
               <div class="form-group">
                 <div class="form-check">
